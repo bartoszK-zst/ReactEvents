@@ -1,23 +1,47 @@
 import logo from './logo.svg';
 import './App.css';
+import ClickButton from './components/ClickButton.js';
+import User from './components/User.js'
+import TextInput from './components/TextInput.js'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <ClickButton/>
+      <ol>
+        <li>
+          <User firstName="Włodzimierz" lastName="Kamień"/>
+        </li>
+        <li>
+          <User firstName="Kazimierz" lastName="Kamień"/>
+        </li>
+        <li>
+          <User firstName="Bożydar" lastName="Kamień"/>
+        </li>
+        <li>
+          <User firstName="Mierz" lastName="Kamień"/>
+        </li>
+        <li>
+          <User firstName="Mieczysław" lastName="Kamień"/>
+        </li>
+        <li>
+          <User firstName="Wojtek" lastName="Kamień"/>
+        </li>
+        <li>
+          <User firstName="Kacper" lastName="Kamień"/>
+        </li>
+        <li>
+          <User firstName="Jakub" lastName="Kamień"/>
+        </li>
+        <li>
+          <User firstName="Albert" lastName="Kamień"/>
+        </li>
+        <li>
+          <User firstName="Hubert" lastName="Kamień"/>
+        </li>
+      </ol>
+      <TextInput/>
     </div>
   );
 }
