@@ -1,10 +1,12 @@
+import { useState } from "react";
+
 export default function TextInput(){
-    const changeText = (text) => {};
+    const [text, setText] = useState({text: 'Zacznij wpisywać'})
 
     return(
         <>
-        <input type="text" unChange={() => changeText(this.text)}/>
-        <div></div>
+        <input type="text" unChange={() => setText(this.text)}/>
+        <div>{this.state}</div>
         </>
     );
 }
