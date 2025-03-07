@@ -41,7 +41,7 @@ function App() {
           <User firstName="Hubert" lastName="Kamień"/>
         </li>
       </ol>
-      <TextInput/>
+      
     </div>
   );
 }
