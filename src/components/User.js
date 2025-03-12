@@ -5,7 +5,7 @@ export default function User(props){
 
     return(
         <div onClick={() => callAlert(fName)}>
-            {fName} {(lName.length / 2) > (fName.length / 3) && lName}
+            {fName} {lName} {(lName.length / 2) > (fName.length / 3) && lName}
         </div>
     );
 }
